@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="global">
+            <div class="main">
+                <div class="image">
+                    <img class="GlobalWeather" src="img/GlobalWeather.png" alt="">
+                    <div class="search">
+                        <input class="cityPut" type="text" id="typedcity" placeholder="type your city">
+                        <button class="addbtn" id="addcity" onclick="addCity()" ><span class="iconfy" data-inline="false" data-icon="bx:bx-search-alt-2" ><img src="img/arrow-white.svg" alt=""></span></button>
+                    </div>
+                </div>
+                <div class="city">
+                   <h1 id="cityname">city name</h1>
+                    <p class="time" id="days"></p> 
+                    <strong>By José Carlos</strong>
+                </div>
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <div class="timer">
+                        <span class="iconfy" data-inline="false" dta-icon="et:clock"></span>
+                        <p class="hour" id="watch">11:25</p>
+                    </div>
+                    <div class="sun">
+                    <p class="sun-temp" id="sunrise"></p>
+                    <p class="sun-temp" id="sunset"></p>
+                    </div>
+                </div>
+                <div class="clock">
+                    <p class="descday" id="desc"></p>
+                    <div class="icon-div" id="icons">
+                        <img src="" class="icon-weather">
+                    </div>
+                    <p class="temperatureday" id="temperature"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
